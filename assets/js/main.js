@@ -68,7 +68,7 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
 
     personasElement.append(card);
 
-    card.innerHTML = `Name : ${member.name}; Role: ${member.role}; Image: ${member.image}`;
+    card.innerHTML = `   `;
     
 
   }
@@ -77,3 +77,5 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
 ${member.name}
 ${member.role}
 ${member.image} */
+
+/* Name : ${member.name}; Role: ${member.role}; Image: ${member.image} */
