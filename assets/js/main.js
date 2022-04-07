@@ -35,8 +35,14 @@ const team = [
 stampare su console le informazioni di nome, ruolo e la stringa della foto
  */
 
+  /* MILESTONE 2:
+stampare le stesse informazioni su DOM sottoforma di stringhe */
+
   //stampo in console l'arrey con gli oggetti, in questo caso i membri del team e le loro caratteristiche
   console.log(team);
+
+
+  const personasElement = document.querySelector(".personas")
 
   //imposto un ciclo for in cui stampo gli attributi dei singoli oggetti (membri) del team
 
@@ -57,5 +63,17 @@ stampare su console le informazioni di nome, ruolo e la stringa della foto
     //stampo in console una stringa per separare i diversi oggetti 
     console.log("_____________________")
 
+    //Creo elementi nella dom dove stamperò le info dei membri del mio team
+    let card = document.createElement("div");
+
+    personasElement.append(card);
+
+    card.innerHTML = `Name : ${member.name}; Role: ${member.role}; Image: ${member.image}`;
+    
 
   }
+
+/* 
+${member.name}
+${member.role}
+${member.image} */
