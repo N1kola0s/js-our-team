@@ -41,7 +41,7 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
   //stampo in console l'arrey con gli oggetti, in questo caso i membri del team e le loro caratteristiche
   console.log(team);
 
-
+ //dichiaro una variabile e la inizializzo con l'elemento nella dom, con richiamo dalla classe
   const personasElement = document.querySelector(".personas")
 
   //imposto un ciclo for in cui stampo gli attributi dei singoli oggetti (membri) del team
@@ -63,11 +63,15 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
     //stampo in console una stringa per separare i diversi oggetti 
     console.log("_____________________")
 
-    //Creo elementi nella dom dove stamperò le info dei membri del mio team
+    //Creo elementi nella dom dove stamperò le info dei membri del team
+
+
     let card = document.createElement("div");
 
+    //appendo quanto creato all'interno di personasElement nella dom
     personasElement.append(card);
 
+    //stampo il contenuto al suo interno
     card.innerHTML =  
 
     `<div class="col d-flex justify-content-center"> 
@@ -81,4 +85,4 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
     </div>`;
 
 
-  }
+}
