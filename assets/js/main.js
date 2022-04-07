@@ -68,9 +68,9 @@ stampare le stesse informazioni su DOM sottoforma di stringhe */
 
     personasElement.append(card);
 
-    card.innerHTML = ` 
+    card.innerHTML =  
 
-    <div class="col d-flex justify-content-center"> 
+    `<div class="col d-flex justify-content-center"> 
         <div class="card my-4" style="width: 18rem;">
             <img src="./assets/img/${member.image}" class="card-img-top" alt="member image">
             <div class="card-body">
